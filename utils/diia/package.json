@@ -1,0 +1,34 @@
+{
+  "name": "ua-acquirers-sdk-js",
+  "private": true,
+  "version": "1.0.2",
+  "description": "",
+  "typings": "types/index.d.ts",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "copy-addons": "sh copy-addons.sh",
+    "start": "NODE_ENV=development && npm run build && npm run copy-addons && node ./build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bindings": "^1.5.0",
+    "dotenv": "^16.0.0",
+    "module_name": "^1.0.0",
+    "node-addon-api": "^4.3.0",
+    "node-gyp": "^9.0.0",
+    "okhttp": "^1.1.0",
+    "path": "^0.12.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.6.3",
+    "util": "^0.12.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/bindings": "^1.5.1",
+    "@types/node": "^17.0.23"
+  }
+}
